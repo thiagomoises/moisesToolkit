@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit.Collections</PackageProjectUrl>
+    <Description>Tookit de coleções, criadas pela comunidade, para otimizar e simplificar operações</Description>
+    <PackageReleaseNotes>Suporte à passagem de parametros às listas incrementais</PackageReleaseNotes>
+    <AssemblyName>Moises.Toolkit.Collections</AssemblyName>
+    <RootNamespace>Moises.Toolkit.Collections</RootNamespace>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>collection</PackageTags>
+    <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit.Collections</RepositoryUrl>
+    <RepositoryType>publico</RepositoryType>
+    <Authors>T. Moises</Authors>
+    <Product>Moises.Toolkit</Product>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+</Project>
