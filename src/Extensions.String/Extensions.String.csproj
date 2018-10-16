@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>Moises.Toolkit</Product>
+    <PackageId>Moises.Toolkit.Extensions.String</PackageId>
+    <Authors>T. Moises</Authors>
+    <Description>Tookit de extensões para manipulação de strings, criadas pela comunidade, para otimizar e simplificar operações</Description>
+    <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit</RepositoryUrl>
+    <RepositoryType>publico</RepositoryType>
+    <PackageTags>string, toolkit</PackageTags>
+    <PackageReleaseNotes>- RemoveAccents
+  Remove accents from string 
+- ScrapeBetween
+  Get contents between 2 string into any string
+- FormatCpf
+  Format string for the Brazilian Cpf pattern</PackageReleaseNotes>
+    <AssemblyName>Moises.Toolkit.Extensions.String</AssemblyName>
+    <RootNamespace>Moises.Toolkit.Extensions.String</RootNamespace>
+  </PropertyGroup>
+
+</Project>

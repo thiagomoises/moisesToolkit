@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit.Collections</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit</PackageProjectUrl>
     <Description>Tookit de coleções, criadas pela comunidade, para otimizar e simplificar operações</Description>
     <PackageReleaseNotes>Suporte à passagem de parametros às listas incrementais</PackageReleaseNotes>
     <AssemblyName>Moises.Toolkit.Collections</AssemblyName>
     <RootNamespace>Moises.Toolkit.Collections</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageTags>collection</PackageTags>
-    <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit.Collections</RepositoryUrl>
+    <PackageTags>collection, toolkit</PackageTags>
+    <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit</RepositoryUrl>
     <RepositoryType>publico</RepositoryType>
     <Authors>T. Moises</Authors>
     <Product>Moises.Toolkit</Product>
