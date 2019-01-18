@@ -56,7 +56,7 @@ namespace Moises.Toolkit.Collections
 
         public IEnumerable<IType> CollectionElements { get; set; }
 
-        public Object[] Args { get; set; }
+        public object[] Args { get; private set; }
 
         public bool HasMoreItems
         {
@@ -183,5 +183,9 @@ namespace Moises.Toolkit.Collections
             return resultCount;
         }
 
+        public void SetArgs(object[] args)
+        {
+            this.Args = args;
+        }
     }
 }

@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit</PackageProjectUrl>
     <Description>Tookit de coleções, criadas pela comunidade, para otimizar e simplificar operações</Description>
-    <PackageReleaseNotes>Suporte à passagem de parametros às listas incrementais</PackageReleaseNotes>
+    <PackageReleaseNotes>GroupedObservableCollection</PackageReleaseNotes>
     <AssemblyName>Moises.Toolkit.Collections</AssemblyName>
     <RootNamespace>Moises.Toolkit.Collections</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -14,9 +14,9 @@
     <RepositoryType>publico</RepositoryType>
     <Authors>T. Moises</Authors>
     <Product>Moises.Toolkit</Product>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
 </Project>
