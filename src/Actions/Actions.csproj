@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Moises.Toolkit.Actions</AssemblyName>
+    <RootNamespace>Moises.Toolkit.Actions</RootNamespace>
+    <Description>Tookit de Actions, Commands e Events, criadas pela comunidade, para otimizar e simplificar operações</Description>
+    <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit</RepositoryUrl>
+    <RepositoryType>publico</RepositoryType>
+    <PackageTags>command, event, action</PackageTags>
+    <PackageReleaseNotes>CommandHandler</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
