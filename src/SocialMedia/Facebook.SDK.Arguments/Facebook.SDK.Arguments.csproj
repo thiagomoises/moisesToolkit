@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Argumentos de requisição e resposta para SDK de Graph API do Facebook. Pode ser utilizado independente do SDK</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Thiago Moises</Authors>
+    <PackageId>Moises.Toolkit.Facebook.SDK.Arguments</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Request\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
