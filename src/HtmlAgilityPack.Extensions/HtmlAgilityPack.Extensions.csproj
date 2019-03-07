@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Moises.Toolkit.HtmlAgilityPack.Extensions</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>T. Moises</Authors>
+    <Description>Motodos de extensão para manitular HTMLDocument</Description>
+    <PackageReleaseNotes>Possibilidade de utilizar os seguintes metodos com o HtmlDocument:
+- GetElementsByClass
+- GetElementsByName
+- GetElementsByTagName</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.9.1" />
+  </ItemGroup>
+
+</Project>

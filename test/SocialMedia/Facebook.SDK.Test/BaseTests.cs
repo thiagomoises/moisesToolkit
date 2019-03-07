@@ -13,8 +13,8 @@ namespace Facebook.SDK.Test
         {
             FacebookOptions = new FacebookOptions()
             {
-                AppId = "2590889607604607",
-                AppSecret = "b271dddf4651d632a4ebedae138c721c",
+                AppId = "",
+                AppSecret = "",
                 SaveTokens = true,
             };
 
