@@ -20,6 +20,7 @@ namespace Moises.Toolkit.Collections
         protected TSource Source { get; }
 
         protected int ItemsPerPage { get; }
+        private readonly bool _hasPreventDuplicates;
 
         protected int CurrentPageIndex { get; set; }
 
@@ -81,11 +82,11 @@ namespace Moises.Toolkit.Collections
         }
 
 
-        public IncrementalLoadingCollection(int itemsPerPage = 50)
-            : this(Activator.CreateInstance<TSource>(), itemsPerPage)
+        public IncrementalLoadingCollection(bool hasPreventDuplicates, int itemsPerPage = 50)
+            : this(Activator.CreateInstance<TSource>(), hasPreventDuplicates, itemsPerPage)
         {
         }
-        public IncrementalLoadingCollection(TSource source, int itemsPerPage = 50)
+        public IncrementalLoadingCollection(TSource source, bool hasPreventDuplicates, int itemsPerPage = 50)
         {
             if (source == null)
             {
@@ -93,7 +94,7 @@ namespace Moises.Toolkit.Collections
             }
 
             Source = source;
-
+            _hasPreventDuplicates = hasPreventDuplicates;
             ItemsPerPage = itemsPerPage;
             _hasMoreItems = true;
         }
@@ -156,11 +157,21 @@ namespace Moises.Toolkit.Collections
                     if (data != null && data.Any() && !_cancellationToken.IsCancellationRequested)
                     {
                         resultCount = (uint)data.Count();
-                        this.AddRange(data);
-                        /*foreach (var item in data)
+                        if (!_hasPreventDuplicates)
                         {
-                            this.Add(item);
-                        }*/
+
+                            this.AddRange(data);
+                        }
+                        else
+                        {
+                            foreach (var item in data)
+                            {
+                                if (!this.Any(x => x.Equals(item)))
+                                {
+                                    this.Add(item);
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -186,6 +197,18 @@ namespace Moises.Toolkit.Collections
         public void SetArgs(object[] args)
         {
             this.Args = args;
+        }
+
+        public void InsertItem(object o)
+        {
+            if (o is IType)
+            {
+                this.Add((IType)o);
+            }
+            else
+            {
+                throw new ArgumentException("Inválid object type");
+            }
         }
     }
 }

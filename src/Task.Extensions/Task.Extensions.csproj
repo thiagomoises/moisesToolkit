@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>T. Moises</Authors>
+    <PackageId>Moises.Toolkit.Task.Extensions</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Metodos e funções de extensão para auxiliar funções assincronas e tasks</Description>
+    <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit</RepositoryUrl>
+    <RepositoryType>publico</RepositoryType>
+    <PackageReleaseNotes>Correção de nome de namespace para evitar conflito</PackageReleaseNotes>
+    <PackageTags>task, toolkit</PackageTags>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+</Project>

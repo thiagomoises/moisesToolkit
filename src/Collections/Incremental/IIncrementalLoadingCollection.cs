@@ -10,5 +10,6 @@ namespace Moises.Toolkit.Collections
 
         Task<uint> LoadMoreItemsAsync(long count = 1);
         Task RefreshAsync();
+        void InsertItem(object o);
     }
 }

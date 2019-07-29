@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit</PackageProjectUrl>
     <Description>Tookit de coleções, criadas pela comunidade, para otimizar e simplificar operações</Description>
-    <PackageReleaseNotes>GroupedObservableCollection</PackageReleaseNotes>
+    <PackageReleaseNotes>IIncrementalLoadingCollection.InsertItem</PackageReleaseNotes>
     <AssemblyName>Moises.Toolkit.Collections</AssemblyName>
     <RootNamespace>Moises.Toolkit.Collections</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -14,9 +14,9 @@
     <RepositoryType>publico</RepositoryType>
     <Authors>T. Moises</Authors>
     <Product>Moises.Toolkit</Product>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
-    <FileVersion>1.0.5.0</FileVersion>
-    <Version>1.0.5</Version>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <FileVersion>1.0.6.0</FileVersion>
+    <Version>1.0.6</Version>
   </PropertyGroup>
 
 </Project>
