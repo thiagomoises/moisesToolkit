@@ -166,7 +166,7 @@ namespace Moises.Toolkit.Collections
                         {
                             foreach (var item in data)
                             {
-                                if (!this.Any(x => x.Equals(item)))
+                                if (!this.Contains(item))
                                 {
                                     this.Add(item);
                                 }
@@ -201,9 +201,10 @@ namespace Moises.Toolkit.Collections
 
         public void InsertItem(object o)
         {
-            if (o is IType)
+            if (o is IType otype)
             {
-                this.Add((IType)o);
+                if (!_hasPreventDuplicates || (_hasPreventDuplicates && !this.Contains(otype)))
+                    this.Add(otype);
             }
             else
             {
